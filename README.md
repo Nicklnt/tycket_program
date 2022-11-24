@@ -1,6 +1,15 @@
 # tycket_program
 The program read the information in two files and print out tyckets base in that information.
 
+To run the program you will need to introduce a convination of the information bellow:
+.\tyckets.cpp -f fInformation.txt -b booking.txt -p -c -m
+
+-f: create a list of flights fron the file .txt . It is necessary to indicate the name of the file.  
+-b: create a list of flights fron the file .txt . It is necessary to indicate the name of the file.
+-p: print tyckets for each element in the booking list. !! It is necessary to add the two first parameters.
+-c: cancel fligths that doesn't have a booking, create a file wtih the information. !! It is necessary to add the two first parameters.
+-m: create a file that show the seats maps of each flight. !! It is necessary to add the parameters -f -b -c;
+
 Will produce the files:
 
 ticket-1001.txt ticket-1002.txt ticket-1003.txt ticket-1004.txt
