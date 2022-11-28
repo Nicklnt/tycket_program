@@ -6,7 +6,8 @@ To run the program you will need to introduce a convination of the information b
 .\tyckets.cpp -f fInformation.txt -b booking.txt -p -c -m
 ```
 
-## -f: create a list of flights fron the file .txt . It is necessary to indicate the name of the file.  
+## -f: create a list of flights fron the file .txt . 
+### It is necessary to indicate the name of the file.  
 
 Will create a list of flights with the following information: flightnumber,departure,destination,date,time,fseats,bseats,eseats
 Example:
@@ -26,7 +27,8 @@ Example:
 ```
 
 
-## -b: create a list of flights fron the file .txt . It is necessary to indicate the name of the file.
+## -b: create a list of flights fron the file .txt . 
+### It is necessary to indicate the name of the file.
 
 Will create a booking list with the following information: bookingnumber,date,time,departure,destination,seatclass,firstname,surname
 Example:
@@ -67,7 +69,8 @@ Example:
 2015,2022-10-27,06:30,STO,HEL,economy,Maja,Johansson
 ```
 
-## -p: print tyckets for each element in the booking list. !! It is necessary to add the two first parameters.
+## -p: print tyckets for each element in the booking list.
+### It is necessary to add the two first parameters.
 
 Will produce the files (ticket-{bookingnumber}.txt):
 ```
@@ -86,9 +89,11 @@ ROW {row} SEAT {seatnumber}
 
 ```
 
-## -c: cancel fligths that doesn't have a booking, create a file wtih the information. !! It is necessary to add the two first parameters.
+## -c: cancel fligths that doesn't have a booking, create a file wtih the information.
+### It is necessary to add the two first parameters.
 
-## -m: create a file that show the seats maps of each flight. !! It is necessary to add the parameters -f -b -c;
+## -m: create a file that show the seats maps of each flight.
+### It is necessary to add the parameters -f -b -c;
 ```
 Will print a map seats that show those that are free (0) and those that are not (1). 
 Row seating is 2-3-2 the all flights
