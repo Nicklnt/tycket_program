@@ -6,7 +6,7 @@ To run the program you will need to introduce a convination of the information b
 .\tyckets.cpp -f fInformation.txt -b booking.txt -p -c -m
 ```
 
-## -f: create a list of flights fron the file .txt . 
+## -f: create a list of flights fron the file .txt 
 ### It is necessary to indicate the name of the file.  
 
 Will create a list of flights with the following information: flightnumber,departure,destination,date,time,fseats,bseats,eseats
@@ -27,7 +27,7 @@ Example:
 ```
 
 
-## -b: create a list of flights fron the file .txt . 
+## -b: create a list of flights fron the file .txt  
 ### It is necessary to indicate the name of the file.
 
 Will create a booking list with the following information: bookingnumber,date,time,departure,destination,seatclass,firstname,surname
