@@ -1,4 +1,4 @@
-## tycket_program
+# Tycket_program
 The program read the information in two files and print out tyckets base in that information.
 
 To run the program you will need to introduce a convination of the information bellow:
@@ -67,7 +67,7 @@ Example:
 2015,2022-10-27,06:30,STO,HEL,economy,Maja,Johansson
 ```
 
-# -p: print tyckets for each element in the booking list. !! It is necessary to add the two first parameters.
+## -p: print tyckets for each element in the booking list. !! It is necessary to add the two first parameters.
 
 Will produce the files (ticket-{bookingnumber}.txt):
 ```
@@ -75,7 +75,7 @@ ticket-1001.txt ticket-1002.txt ticket-1003.txt ticket-1004.txt
 ticket-1005.txt ticket-1006.txt ticket-1007.txt ticket-1008.txt
 ... etc
 ```
-# The tickets are created with this format:
+### The tickets are created with this format:
 
 ```
 BOOKING:{bookingnumber} 
@@ -86,9 +86,9 @@ ROW {row} SEAT {seatnumber}
 
 ```
 
-# -c: cancel fligths that doesn't have a booking, create a file wtih the information. !! It is necessary to add the two first parameters.
+## -c: cancel fligths that doesn't have a booking, create a file wtih the information. !! It is necessary to add the two first parameters.
 
-# -m: create a file that show the seats maps of each flight. !! It is necessary to add the parameters -f -b -c;
+## -m: create a file that show the seats maps of each flight. !! It is necessary to add the parameters -f -b -c;
 ```
 Will print a map seats that show those that are free (0) and those that are not (1). 
 Row seating is 2-3-2 the all flights
