@@ -5,6 +5,7 @@ To run the program you will need to introduce a convination of the information b
 ```
 .\tyckets.cpp -f fInformation.txt -b booking.txt -p -c -m
 ```
+If you don't add flags a error message its gonna appear.
 
 ## -f: create a list of flights fron the file .txt 
 ### It is necessary to indicate the name of the file.  
