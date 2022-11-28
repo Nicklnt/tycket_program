@@ -2,9 +2,9 @@
 The program read the information in two files and print out tyckets base in that information.
 
 To run the program you will need to introduce a convination of the information bellow:
-
-## .\tyckets.cpp -f fInformation.txt -b booking.txt -p -c -m
 ```
+# .\tyckets.cpp -f fInformation.txt -b booking.txt -p -c -m
+
 # -f: create a list of flights fron the file .txt . It is necessary to indicate the name of the file.  
 # -b: create a list of flights fron the file .txt . It is necessary to indicate the name of the file.
 # -p: print tyckets for each element in the booking list. !! It is necessary to add the two first parameters.
