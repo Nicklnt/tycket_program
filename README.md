@@ -1,37 +1,16 @@
-# tycket_program
+### tycket_program
 The program read the information in two files and print out tyckets base in that information.
 
 To run the program you will need to introduce a convination of the information bellow:
 ```
-# .\tyckets.cpp -f fInformation.txt -b booking.txt -p -c -m
-```
-```
-# -f: create a list of flights fron the file .txt . It is necessary to indicate the name of the file.  
-# -b: create a list of flights fron the file .txt . It is necessary to indicate the name of the file.
-# -p: print tyckets for each element in the booking list. !! It is necessary to add the two first parameters.
-# -c: cancel fligths that doesn't have a booking, create a file wtih the information. !! It is necessary to add the two first parameters.
-# -m: create a file that show the seats maps of each flight. !! It is necessary to add the parameters -f -b -c;
-```
-Will produce the files:
-```
-ticket-1001.txt ticket-1002.txt ticket-1003.txt ticket-1004.txt
-ticket-1005.txt ticket-1006.txt ticket-1007.txt ticket-1008.txt
-... etc
+## .\tyckets.cpp -f fInformation.txt -b booking.txt -p -c -m
 ```
 
-Will identified the seat number and the row of each booking:
-
-Row seating is 2-3-2 the all flights
-Seats row 1 [  1][  2] -  [  3][  4][  5] - [  6][  7]
-Seats row 2 [  8][  9] -  [ 10][ 11][ 12] - [ 13][ 14]
-Seats row 3 [ 15][ 16] -  [ 17][ 18][ 19] - [ 20][ 21]
-Seats row 4 [ 22][ 23] -  [ 24][ 25][ 26] - [ 27][ 28]
-etc .....
-
+## -f: create a list of flights fron the file .txt . It is necessary to indicate the name of the file.  
 
 Will create a list of flights with the following information: flightnumber,departure,destination,date,time,fseats,bseats,eseats
 Example:
-
+```
 304,GOT,CPH,2022-10-27,06:30,28,70,112
 304,GOT,CPH,2022-10-27,07:30,28,70,112
 304,GOT,CPH,2022-10-27,08:30,28,70,112
@@ -44,10 +23,15 @@ Example:
 312,STO,HEL,2022-10-27,06:30,28,70,112
 312,STO,HEL,2022-10-27,07:30,28,70,112
 312,STO,HEL,2022-10-27,08:30,28,70,112
+```
+
+
+## -b: create a list of flights fron the file .txt . It is necessary to indicate the name of the file.
 
 Will create a booking list with the following information: bookingnumber,date,time,departure,destination,seatclass,firstname,surname
-
 Example:
+```
+
 
 1000,2022-10-27,06:30,GOT,LGW,first,Kalle,Kula
 1001,2022-10-27,06:30,GOT,LGW,first,Moa,Kula
@@ -81,27 +65,41 @@ Example:
 2013,2022-10-27,08:30,GOT,ARN,economy,Per,Johansson
 2014,2022-10-27,06:30,STO,HEL,economy,Conny,Johansson
 2015,2022-10-27,06:30,STO,HEL,economy,Maja,Johansson
-Output:
+```
 
-## The tickets are created with this format:
+# -p: print tyckets for each element in the booking list. !! It is necessary to add the two first parameters.
 
-ticket-{bookingnumber}.txt
-Each file contain the following information in this format:
+Will produce the files (ticket-{bookingnumber}.txt):
+```
+ticket-1001.txt ticket-1002.txt ticket-1003.txt ticket-1004.txt
+ticket-1005.txt ticket-1006.txt ticket-1007.txt ticket-1008.txt
+... etc
+```
+# The tickets are created with this format:
 
+```
 BOOKING:{bookingnumber} 
 FLIGHT:{flight} DEPARTURE:{dep} DESTINATION: {dest} {date} {time}
 PASSENGER {firstname} {surname}
 CLASS: {seatclass}
 ROW {row} SEAT {seatnumber}
-Example of ticket filename:
 
-ticket-2007.txt
-Example of ticket file content:
+```
 
-BOOKING:2007
-FLIGHT:304 DEPARTURE:GOT DESTINATION:CPH 2022-10-27 06:30
-PASSENGER: Kalle Kula
-CLASS: first
-ROW:4 SEAT:24
+# -c: cancel fligths that doesn't have a booking, create a file wtih the information. !! It is necessary to add the two first parameters.
 
+# -m: create a file that show the seats maps of each flight. !! It is necessary to add the parameters -f -b -c;
+```
 Will print a map seats that show those that are free (0) and those that are not (1). 
+Row seating is 2-3-2 the all flights
+Seats row 1 [  1][  2] -  [  3][  4][  5] - [  6][  7]
+Seats row 2 [  8][  9] -  [ 10][ 11][ 12] - [ 13][ 14]
+Seats row 3 [ 15][ 16] -  [ 17][ 18][ 19] - [ 20][ 21]
+Seats row 4 [ 22][ 23] -  [ 24][ 25][ 26] - [ 27][ 28]
+etc .....
+```
+
+
+
+
+
